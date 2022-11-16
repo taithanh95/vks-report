@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report11-law_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="62b9e0e7-1431-4413-b711-79dac0016131">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="10.47.104.230_SPP_V2"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="report11-law" uuid="b0aa5718-d8de-4a38-8a18-e652ef788510">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="10.47.104.230_SPP_V2"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<parameter name="SPPID" class="java.lang.String"/>
+		<parameter name="FROMDATE" class="java.sql.Date"/>
+		<parameter name="TODATE" class="java.sql.Date"/>
+		<parameter name="REPORTLEVEL" class="java.lang.String"/>
+		<parameter name="REPORTDISP" class="java.lang.String"/>
+		<parameter name="REPORTTYPE" class="java.lang.String"/>
+		<parameter name="CODEID" class="java.lang.String"/>
+		<parameter name="GROUPID" class="java.lang.String"/>
+		<parameter name="LAWID" class="java.lang.String"/>
+		<queryString language="plsql">
+			<![CDATA[{Call PKG_RPT_2019.SP_REPORT_BIEU112019($P{ORACLE_REF_CURSOR}, $P{SPPID}, $P{FROMDATE}, $P{TODATE}, $P{REPORTLEVEL}, $P{REPORTDISP}, $P{REPORTTYPE}, $P{CODEID},  $P{GROUPID},  $P{LAWID})}]]>
+		</queryString>
+		<field name="SPPPARENTNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="SPPPARENTNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="SPPPARENTNAME"/>
+		</field>
+		<field name="SPPNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="SPPNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="SPPNAME"/>
+		</field>
+		<field name="RPTCODENAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="RPTCODENAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="RPTCODENAME"/>
+		</field>
+		<field name="RPTGROUPNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="RPTGROUPNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="RPTGROUPNAME"/>
+		</field>
+		<field name="RPTLAWNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="RPTLAWNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="RPTLAWNAME"/>
+		</field>
+		<field name="SPPLAWNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="SPPLAWNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="SPPLAWNAME"/>
+		</field>
+		<field name="SPPNUM" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="SPPNUM"/>
+			<property name="com.jaspersoft.studio.field.label" value="SPPNUM"/>
+		</field>
+		<field name="LAWNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="LAWNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="LAWNAME"/>
+		</field>
+		<field name="LAWID" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="LAWID"/>
+			<property name="com.jaspersoft.studio.field.label" value="LAWID"/>
+		</field>
+		<field name="COL3" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL3"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL3"/>
+		</field>
+		<field name="COL4" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL4"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL4"/>
+		</field>
+		<field name="COL5" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL5"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL5"/>
+		</field>
+		<field name="COL6" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL6"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL6"/>
+		</field>
+		<field name="COL7" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL7"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL7"/>
+		</field>
+		<field name="COL8" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL8"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL8"/>
+		</field>
+		<field name="COL9" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL9"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL9"/>
+		</field>
+		<field name="COL10" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL10"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL10"/>
+		</field>
+		<field name="COL11" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL11"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL11"/>
+		</field>
+		<field name="COL12" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL12"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL12"/>
+		</field>
+		<field name="COL13" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL13"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL13"/>
+		</field>
+		<field name="COL14" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL14"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL14"/>
+		</field>
+		<field name="COL15" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="COL15"/>
+			<property name="com.jaspersoft.studio.field.label" value="COL15"/>
+		</field>
+		<variable name="TOTAL_COL3" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL3}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL4" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL4}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL5" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL5}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL6" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL6}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL7" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL7}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL8" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL8}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL9" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL9}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL10" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL10}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL11" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL11}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL12" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL12}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL13" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL13}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL14" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL14}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+		<variable name="TOTAL_COL15" class="java.lang.Long" calculation="Sum">
+			<variableExpression><![CDATA[$F{COL15}]]></variableExpression>
+			<initialValueExpression><![CDATA[0]]></initialValueExpression>
+		</variable>
+	</subDataset>
+	<parameter name="SPPID" class="java.lang.String"/>
+	<parameter name="FROMDATE" class="java.util.Date"/>
+	<parameter name="TODATE" class="java.util.Date"/>
+	<parameter name="REPORTLEVEL" class="java.lang.String"/>
+	<parameter name="REPORTDISP" class="java.lang.String"/>
+	<parameter name="REPORTTYPE" class="java.lang.String"/>
+	<parameter name="CODEID" class="java.lang.String"/>
+	<parameter name="GROUPID" class="java.lang.String"/>
+	<parameter name="LAWID" class="java.lang.String"/>
+	<parameter name="sppId" class="java.lang.Integer"/>
+	<parameter name="fromDate" class="java.lang.String"/>
+	<parameter name="toDate" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="signature" class="java.lang.String"/>
+	<parameter name="sppname" class="java.lang.String"/>
+	<parameter name="optName" class="java.lang.String"/>
+	<parameter name="opt" class="java.lang.String"/>
+	<parameter name="position" class="java.lang.String"/>
+	<parameter name="underPos" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select userid from adm_users where userid = 'admin']]>
+	</queryString>
+	<field name="USERID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="USERID"/>
+		<property name="com.jaspersoft.studio.field.label" value="USERID"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="479" splitType="Stretch">
+			<componentElement>
+				<reportElement x="20" y="170" width="760" height="200" uuid="4e240d3c-1418-473d-9af4-c58dd25b6b58">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="report11-law" uuid="131ed911-8f8b-4f48-847c-7f6538d34fcf">
+						<datasetParameter name="CODEID">
+							<datasetParameterExpression><![CDATA[$P{CODEID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="FROMDATE">
+							<datasetParameterExpression><![CDATA[$P{FROMDATE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="GROUPID">
+							<datasetParameterExpression><![CDATA[$P{GROUPID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="LAWID">
+							<datasetParameterExpression><![CDATA[$P{LAWID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="REPORTDISP">
+							<datasetParameterExpression><![CDATA[$P{REPORTDISP}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="REPORTLEVEL">
+							<datasetParameterExpression><![CDATA[$P{REPORTLEVEL}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="REPORTTYPE">
+							<datasetParameterExpression><![CDATA[$P{REPORTTYPE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="SPPID">
+							<datasetParameterExpression><![CDATA[$P{SPPID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="TODATE">
+							<datasetParameterExpression><![CDATA[$P{TODATE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="170" uuid="b57326f0-0dde-4ad3-814a-61a745ef4dd2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableFooter height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="170" height="30" uuid="55f48e3f-413f-4f01-9cae-d9439da96af7"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[TỔNG SỐ]]></text>
+							</staticText>
+						</jr:tableFooter>
+						<jr:columnHeader height="140" rowSpan="3">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="170" height="120" uuid="88e623e8-1cc3-4e12-bc51-84bbad605944"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[TỘI DANH]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="120" width="170" height="20" uuid="cd2607a0-bb44-4610-95fa-b31c5577a75b"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[(1)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="170" height="30" uuid="c241373e-a4e0-4d92-b7b8-edc6d591afdf"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LAWNAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="51" uuid="5a803f0c-e62b-4b5f-af09-8f9376f1ed9b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableFooter height="30" rowSpan="1">
+							<box>
+								<pen lineWidth="0.0"/>
+								<topPen lineWidth="0.05" lineStyle="Solid"/>
+								<leftPen lineWidth="0.05" lineStyle="Solid"/>
+								<bottomPen lineWidth="0.05" lineStyle="Solid"/>
+								<rightPen lineWidth="0.05" lineStyle="Solid"/>
+							</box>
+						</jr:tableFooter>
+						<jr:columnHeader height="140" rowSpan="3">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="51" height="120" uuid="dd5d0f43-4e7b-4c26-9588-87d4969f61a4"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[ĐIỀU LUẬT]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="120" width="51" height="20" uuid="1d231480-1fbf-4293-a5c4-5af6da24876c"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[(2)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="51" height="30" uuid="16ab0844-4b87-4acc-8517-5385cfe5bc32"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LAWID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="51" uuid="b208723c-120e-4158-80e2-33f815a1551e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableFooter height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="51" height="30" uuid="881c0974-9b70-41b1-93b8-58d24c96047e"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($V{TOTAL_COL3} == null || $V{TOTAL_COL3} == 0) ? "" : $V{TOTAL_COL3}]]></textFieldExpression>
+							</textField>
+						</jr:tableFooter>
+						<jr:columnHeader height="140" rowSpan="3">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="51" height="120" uuid="c22615dc-8c33-4581-a1c2-6d4067d575ab"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Tổng số vụ án đã khởi tố]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="120" width="51" height="20" uuid="ee09752b-aab7-4485-b8d0-6efbc33b1a7b"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[(3)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="51" height="30" uuid="d33bac7e-6145-49db-8dfb-2d8f79cc29f8"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{COL3} == null || $F{COL3} == 0) ? "" : $F{COL3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="51" uuid="7ca55fac-e317-425a-97fb-ed908f7c5358">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:tableFooter height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="51" height="30" uuid="73a1d2b1-fe03-4d6b-aa0b-0846c957376e"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($V{TOTAL_COL4} == null || $V{TOTAL_COL4} == 0) ? "" : $V{TOTAL_COL4}]]></textFieldExpression>
+							</textField>
+						</jr:tableFooter>
+						<jr:columnHeader height="140" rowSpan="3">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="51" height="120" uuid="48fa9ed8-c06c-46bb-9504-9694c3459dd9"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Tổng số bị can đã khởi tố]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="120" width="51" height="20" uuid="04a09b08-cb35-4844-9d16-1b3b349470f3"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[(4)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="51" height="30" uuid="7de7406d-b5b0-48e8-814d-93de2660d2ff"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{COL4} == null || $F{COL4} == 0) ? "" : $F{COL4}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:columnGroup width="80" uuid="484a31ec-e3f0-480c-98b8-f754b78dfb2c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="7ecf8414-927a-4d25-8a82-eeb0324bb628"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Trong đó]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:column width="40" uuid="29299c3d-1115-49b5-82f1-9318f99898f5">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+							<jr:tableFooter height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="40" height="30" uuid="2d6af5b5-62f1-49dc-9698-200a041c4476"/>
+									<box padding="3">
+										<pen lineWidth="0.0"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA[($V{TOTAL_COL5} == null || $V{TOTAL_COL5} == 0) ? "" : $V{TOTAL_COL5}]]></textFieldExpression>
+								</textField>
+							</jr:tableFooter>
+							<jr:columnHeader height="110" rowSpan="2">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+								<staticText>
+									<reportElement x="0" y="0" width="40" height="90" uuid="90ec0116-09c2-4c25-9c3d-41d13b0c5011"/>
+									<box padding="3">
+										<pen lineWidth="0.0" lineStyle="Solid"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+									</textElement>
+									<text><![CDATA[Số bị can là pháp nhân]]></text>
+								</staticText>
+								<staticText>
+									<reportElement x="0" y="90" width="40" height="20" uuid="da4290d6-a481-4d7b-a539-976482657da2"/>
+									<box padding="3">
+										<pen lineWidth="0.0"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+									</textElement>
+									<text><![CDATA[(5)]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell height="30">
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="40" height="30" uuid="e6cfd6fb-2bc7-4777-9222-8a87d0aa392b"/>
+									<box padding="3">
+										<pen lineWidth="0.0" lineStyle="Solid"/>
+										<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA[($F{COL5} == null || $F{COL5} == 0) ? "" : $F{COL5}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="40" uuid="3b2cc089-c27f-4b93-ac23-b71f78b156ad">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+							<jr:tableFooter height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="40" height="30" uuid="8ce6e993-bc12-452a-a719-f68d17244141"/>
+									<box padding="3">
+										<pen lineWidth="0.0"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA[($V{TOTAL_COL6} == null || $V{TOTAL_COL6} == 0) ? "" : $V{TOTAL_COL6}]]></textFieldExpression>
+								</textField>
+							</jr:tableFooter>
+							<jr:columnHeader height="110" rowSpan="2">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+								<staticText>
+									<reportElement x="0" y="0" width="40" height="90" uuid="60420414-ecb7-4c35-ad0a-0d8042d30310"/>
+									<box padding="3">
+										<pen lineWidth="0.0" lineStyle="Solid"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+									</textElement>
+									<text><![CDATA[Số bị can là cá nhân]]></text>
+								</staticText>
+								<staticText>
+									<reportElement x="0" y="90" width="40" height="20" uuid="08f6b1c0-50d7-4543-8b52-02e1d636c0b4"/>
+									<box padding="3">
+										<pen lineWidth="0.0"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+									</textElement>
+									<text><![CDATA[(6)]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell height="30">
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="40" height="30" uuid="ababd516-0c86-41e6-a4d2-9874fe40845e"/>
+									<box padding="3">
+										<pen lineWidth="0.0" lineStyle="Solid"/>
+										<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA[($F{COL6} == null || $F{COL6} == 0) ? "" : $F{COL6}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+					<jr:columnGroup width="357" uuid="bf450ef1-6c75-4130-92d0-589e601d119e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [9]"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="357" height="30" uuid="c5dfbe8f-a246-4eeb-b14c-d96d2ca70a8a"/>
+								<box padding="3">
+									<pen lineWidth="0.0" lineStyle="Solid"/>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Phân tích số bị can là cá nhân mới khởi tố]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnGroup width="200" uuid="6de746f5-0bf7-4127-b98a-f1dff07191c9">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [5]"/>
+							<jr:columnHeader height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="200" height="30" uuid="60cec52b-fd05-424c-a78e-288364886942"/>
+									<box padding="3">
+										<pen lineWidth="0.0" lineStyle="Solid"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<text><![CDATA[Độ tuổi]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:column width="40" uuid="3335752c-c080-47ba-b5b2-3d74c7756723">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="2ab15ef8-dbc1-4f3f-bd0f-2b29e7f17433"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL7} == null || $V{TOTAL_COL7} == 0) ? "" : $V{TOTAL_COL7}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="7e533c07-17e2-456a-b22a-c8ad9f550e34"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Từ 14 đến dưới 16 tuổi]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="1c401e7e-0445-4c4d-aefb-f81a6f507303"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(7)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="c13c36c2-eab5-46ee-b70b-1ea9176b7716"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL7} == null || $F{COL7} == 0) ? "" : $F{COL7}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="40" uuid="b7954df7-6228-4d82-a309-8ac2543bb289">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="b1c95f65-908c-4edf-ac1a-5b5896b4c523"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL8} == null || $V{TOTAL_COL8} == 0) ? "" : $V{TOTAL_COL8}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="fec79b31-1f28-436e-88f7-e74118d5c6b4"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Từ 16 đến dưới 18 tuổi]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="6ee1ea1c-e094-4d88-ab35-83a2877f7078"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(8)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="9becdbaf-d321-40d4-8f46-a716cf5adaf6"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL8} == null || $F{COL8} == 0) ? "" : $F{COL8}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="40" uuid="26b12b3f-597c-41d4-97a9-66f3ec3159e6">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="7789ba39-f301-48e6-a4e6-92f8351265eb"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL9} == null || $V{TOTAL_COL9} == 0) ? "" : $V{TOTAL_COL9}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="118c65b9-d62e-46f4-9c4c-43de54fa1f7a"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Từ 18 đến 30 tuổi]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="a903a6ad-c8d9-4e45-acc9-362fe27fee5e"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(9)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="252360cc-3b20-4316-9b48-a3dd5a38e7bd"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL9} == null || $F{COL9} == 0) ? "" : $F{COL9}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="40" uuid="0b21025a-1180-450a-adbf-7b535853b998">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="956ebbba-2521-46fc-bce3-be52b6266956"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL10} == null || $V{TOTAL_COL10} == 0) ? "" : $V{TOTAL_COL10}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="d48ba8c2-7f28-4f13-8979-095c57002229"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Trên 30 tuổi đến 70 tuổi]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="5c69156a-cf11-4bec-b9d0-ee1eabeea0f9"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(10)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="ba5c8ef9-23ef-4136-8b8a-01c5c817a062"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL10} == null || $F{COL10} == 0) ? "" : $F{COL10}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="40" uuid="776d3010-1206-4b74-beae-2033f8490773">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="510d4f7d-70e2-45e3-9a0c-15ce14ddfec1"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL11} == null || $V{TOTAL_COL11} == 0) ? "" : $V{TOTAL_COL11}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="7e331cab-f579-4df9-bb42-48645066ba7a"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Trên 70 tuổi]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="a752a2a3-5bd6-404c-ac6a-9021d31c706d"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(11)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="bf5c9f95-fd1d-4869-a849-77945251681e"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL11} == null || $F{COL11} == 0) ? "" : $F{COL11}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+						<jr:columnGroup width="80" uuid="cd399e84-f7d9-4575-b948-a6906f36727e">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
+							<jr:columnHeader height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="80" height="30" uuid="7ef6fb04-f738-47f7-9759-68a90da97895"/>
+									<box padding="3">
+										<pen lineWidth="0.0" lineStyle="Solid"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<text><![CDATA[Giới tính]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:column width="40" uuid="e51d1c8d-c549-4619-a2a6-99c3657498d2">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="8c7e1e10-27d7-41a5-be43-d3daf6da53b5"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL12} == null || $V{TOTAL_COL12} == 0) ? "" : $V{TOTAL_COL12}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="51643a87-d321-48d4-ad7e-98b7f3fdd211"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Nữ]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="b07a60d3-c910-44db-af0f-c21e9e12472b"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(12)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="8423c0c2-0354-4704-b662-e8c8bbbbd04f"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL12} == null || $F{COL12} == 0) ? "" : $F{COL12}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="40" uuid="f674da77-9a7d-461f-8126-0f37d99f0f11">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="e68d027f-e42f-40bb-821b-2ce29d7bd361"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL13} == null || $V{TOTAL_COL13} == 0) ? "" : $V{TOTAL_COL13}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="02a0d2b3-4a54-4e6b-a661-57dba781f1c4"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Nam]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="8f3e3900-1cbf-4877-9dc9-0fd79dd27ef7"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(13)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="167b68d5-2a7b-4bb7-9afd-0d58c91c75a9"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL13} == null || $F{COL13} == 0) ? "" : $F{COL13}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+						<jr:columnGroup width="77" uuid="dcf8a96e-de2b-4a17-aadd-20f1d12f5c01">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
+							<jr:columnHeader height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="77" height="30" uuid="91330c0d-c3b9-4ef5-9b55-e779eec212e6"/>
+									<box padding="3">
+										<pen lineWidth="0.0" lineStyle="Solid"/>
+										<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<text><![CDATA[Dân tộc]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:column width="40" uuid="391e6ca4-af4a-4836-8575-c25a8ba648df">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="40" height="30" uuid="20cc38c3-bf89-4aab-a8d9-f60bb805beb7"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL14} == null || $V{TOTAL_COL14} == 0) ? "" : $V{TOTAL_COL14}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="40" height="60" uuid="0bcf1318-9dc3-4bfb-8bd5-dc183172ccc9"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Kinh]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="40" height="20" uuid="a8d9797d-1879-40e9-8e30-c61867cb580b"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(14)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="40" height="30" uuid="b1f9280f-1ed3-4a71-95ad-d9461e73188b"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL14} == null || $F{COL14} == 0) ? "" : $F{COL14}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="37" uuid="9aad6226-f619-4956-bec2-045ef2343880">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+								<jr:tableFooter height="30" rowSpan="1">
+									<textField>
+										<reportElement x="0" y="0" width="37" height="30" uuid="e149c8b9-1e01-4655-bd21-62c6aef57c9b"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($V{TOTAL_COL15} == null || $V{TOTAL_COL15} == 0) ? "" : $V{TOTAL_COL15}]]></textFieldExpression>
+									</textField>
+								</jr:tableFooter>
+								<jr:columnHeader height="80" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="37" height="60" uuid="1b268ff7-a72f-4ae3-a204-fee5d45dc2b2"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Thiểu số]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="60" width="37" height="20" uuid="0c03f33d-ee7b-435c-9edb-c852786d5838"/>
+										<box padding="3">
+											<pen lineWidth="0.0"/>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[(15)]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="37" height="30" uuid="ae1f8b7d-ff7a-48e5-8050-612c0479a41e"/>
+										<box padding="3">
+											<pen lineWidth="0.0" lineStyle="Solid"/>
+											<topPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<leftPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.75" lineStyle="Dotted" lineColor="#000000"/>
+											<rightPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[($F{COL15} == null || $F{COL15} == 0) ? "" : $F{COL15}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="610" y="34" width="170" height="36" uuid="379003b4-7089-4622-b4ca-41b836f360ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="10" isBold="false" isUnderline="false" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[(Ban hành theo QĐ số 560/QĐ - VKSTC ngày 13/11/2019 của Viện trưởng VKSNDTC)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="610" y="4" width="170" height="30" uuid="eebfc726-a421-49e6-9a4a-8d4de089a3a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Biểu số 11/2019]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="51" width="400" height="40" isRemoveLineWhenBlank="true" uuid="184d1a85-948f-40fe-b9fb-b066e96f0033"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[THỐNG KÊ SỐ VỤ ÁN VÀ BỊ CAN ĐÃ KHỞI TỐ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="166" y="91" width="470" height="20" isRemoveLineWhenBlank="true" uuid="eba58fcc-b3e0-4eff-9246-324d07638213"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(Từ ngày "+$P{fromDate} +" đến ngày " + $P{toDate}+")"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="166" y="111" width="470" height="20" isRemoveLineWhenBlank="true" uuid="3a535929-8e66-4772-a926-9ae67812c72b"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(Áp dụng cho kỳ thống kê tháng, 6 tháng và 12 tháng; điều luật đánh dấu * là đánh luật cũ)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="19" y="4" width="200" height="30" uuid="976098f9-d60d-4eb1-8490-b70b94d6e436"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sppname}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="19" y="150" width="420" height="20" isRemoveLineWhenBlank="true" uuid="efe0e0cd-4cbf-414b-998e-a766f6ce6c07"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{opt} == "4" ? "Tổng hợp số liệu của "+$P{sppId} +" VKS được chọn " : $P{optName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="129" y="394" width="180" height="20" uuid="d137061a-7ff9-44b3-9c3e-bcf352b73a0d"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Người lập biểu]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="509" y="443" width="159" height="30" uuid="7b75e998-abb2-4270-ba8d-f5e8b27bcc12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{signature}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="510" y="393" width="159" height="20" uuid="44e9f040-82bb-4b50-8f13-e5a4ccb5d1d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="510" y="413" width="159" height="20" uuid="ae1d6abc-dcd0-4072-bbe0-49716d2d4d89"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{underPos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="129" y="445" width="180" height="30" uuid="aabf562e-ac75-4215-adcb-ea554a60d9fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="510" y="372" width="159" height="20" uuid="fcf2cd81-967b-4c67-90c3-beff581909a8"/>
+				<box padding="3"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="129" y="414" width="180" height="20" uuid="f70ca2b5-7806-454b-ba22-1bf18265a633"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[(Ký, ghi rõ họ và tên)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="62" y="37" width="100" height="1" uuid="9f5127f4-a8fe-44a0-a5a7-27362b811063">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="332" y="17" width="100" height="30" uuid="52b5c5d7-121e-437d-a0f9-fabc011394e1"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Trang " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="432" y="17" width="100" height="30" uuid="6d22b839-3811-410c-9d09-7147ef631cde"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["/" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

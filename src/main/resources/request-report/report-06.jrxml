@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_06" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e6ad04c1-c342-4098-8335-0b2cb69b6e22">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="report.xml"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="report_06" uuid="85c385a4-7bb9-4b4f-b311-095670b3b122">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="report.xml"/>
+		<parameter name="SPPID" class="java.lang.String"/>
+		<parameter name="FROMDATE" class="java.sql.Date"/>
+		<parameter name="TODATE" class="java.sql.Date"/>
+		<parameter name="REPORTLEVEL" class="java.lang.String"/>
+		<parameter name="REPORTDISP" class="java.lang.String"/>
+		<parameter name="REPORTTYPE" class="java.lang.String"/>
+		<queryString language="plsql">
+			<![CDATA[{Call PKG_RPT_2019.SP_REPORT_BIEU62019($P{ORACLE_REF_CURSOR}, $P{SPPID}, $P{FROMDATE}, $P{TODATE}, $P{REPORTLEVEL}, $P{REPORTDISP}, $P{REPORTTYPE})}]]>
+		</queryString>
+		<field name="SPPNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="SPPNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="SPPNAME"/>
+		</field>
+		<field name="SPPNUM" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="SPPNUM"/>
+			<property name="com.jaspersoft.studio.field.label" value="SPPNUM"/>
+		</field>
+		<field name="RPTCODE" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="RPTCODE"/>
+			<property name="com.jaspersoft.studio.field.label" value="RPTCODE"/>
+		</field>
+		<field name="ROWNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ROWNAME"/>
+			<property name="com.jaspersoft.studio.field.label" value="ROWNAME"/>
+		</field>
+		<field name="ROWCODE" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ROWCODE"/>
+			<property name="com.jaspersoft.studio.field.label" value="ROWCODE"/>
+		</field>
+		<field name="ISHEAD" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ISHEAD"/>
+			<property name="com.jaspersoft.studio.field.label" value="ISHEAD"/>
+		</field>
+		<field name="APPLYFOR" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="APPLYFOR"/>
+			<property name="com.jaspersoft.studio.field.label" value="APPLYFOR"/>
+		</field>
+		<field name="VALORI" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="VALORI"/>
+			<property name="com.jaspersoft.studio.field.label" value="VALORI"/>
+		</field>
+		<field name="VAL" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="VAL"/>
+			<property name="com.jaspersoft.studio.field.label" value="VAL"/>
+		</field>
+	</subDataset>
+	<parameter name="SPPID" class="java.lang.String"/>
+	<parameter name="FROMDATE" class="java.util.Date"/>
+	<parameter name="TODATE" class="java.util.Date"/>
+	<parameter name="REPORTLEVEL" class="java.lang.String"/>
+	<parameter name="REPORTDISP" class="java.lang.String"/>
+	<parameter name="REPORTTYPE" class="java.lang.String"/>
+	<parameter name="sppId" class="java.lang.Integer"/>
+	<parameter name="fromDate" class="java.lang.String"/>
+	<parameter name="toDate" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="signature" class="java.lang.String"/>
+	<parameter name="sppname" class="java.lang.String"/>
+	<parameter name="optName" class="java.lang.String"/>
+	<parameter name="opt" class="java.lang.String"/>
+	<parameter name="position" class="java.lang.String"/>
+	<parameter name="underPos" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select userid from adm_users where userid = 'admin']]>
+	</queryString>
+	<field name="USERID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="USERID"/>
+		<property name="com.jaspersoft.studio.field.label" value="USERID"/>
+	</field>
+	<title>
+		<band height="191" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="380" y="0" width="170" height="30" uuid="e966d41d-d623-434a-940e-6ab60560ca02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Biểu số 06/2019]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="30" width="170" height="50" uuid="acfc1c93-d5c5-4e95-8762-d53fc21383e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="10" isBold="false" isUnderline="false" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[(Ban hành theo QĐ số 560/QĐ - VKSTC ngày 13/11/2019 của Viện trưởng VKSNDTC)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="80" width="450" height="55" isRemoveLineWhenBlank="true" uuid="eb83014b-4f7d-4080-8529-2bdfb8d305cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[THỐNG KÊ THỰC HÀNH QUYỀN CÔNG TỐ VÀ KIỂM SÁT
+XÉT XỬ GIÁM ĐỐC THẨM, TÁI THẨM CÁC VỤ ÁN HÌNH SỰ VÀ THỦ TỤC XEM XÉT LẠI QUYẾT ĐỊNH CỦA HĐTP TÒA ÁN NHÂN DÂN TỐI CAO ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="80" y="155" width="400" height="20" isRemoveLineWhenBlank="true" uuid="b2f4d2de-3175-47f2-a78a-dfa4de82d1e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Áp dụng cho kỳ thống kê tháng, 6 tháng và 12 tháng"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="50" y="135" width="470" height="20" isRemoveLineWhenBlank="true" uuid="e0cd1d7d-8321-4017-ab7f-f2c754f77757"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(Từ ngày "+$P{fromDate} +" đến ngày " + $P{toDate}+")"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="200" height="30" uuid="fd5a67be-c490-4ae5-bf72-2aba3c55b773"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sppname}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="48" y="37" width="100" height="1" uuid="0df3cc9a-14e8-4747-887b-a09c15c37d09">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</title>
+	<detail>
+		<band height="390" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="15" y="30" width="519" height="62" uuid="25943376-bb2c-40b4-8b6f-b512127d9764">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="report_06" uuid="0887c68d-c1da-4360-bb80-473e774c7943">
+						<datasetParameter name="FROMDATE">
+							<datasetParameterExpression><![CDATA[$P{FROMDATE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="TODATE">
+							<datasetParameterExpression><![CDATA[$P{TODATE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="SPPID">
+							<datasetParameterExpression><![CDATA[$P{SPPID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="REPORTDISP">
+							<datasetParameterExpression><![CDATA[$P{REPORTDISP}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="REPORTLEVEL">
+							<datasetParameterExpression><![CDATA[$P{REPORTLEVEL}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="REPORTTYPE">
+							<datasetParameterExpression><![CDATA[$P{REPORTTYPE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="400" uuid="935c79c2-d72a-45ed-bf0b-3683ef3aacf0">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="400" height="30" uuid="57328c1b-7f91-4eb7-827b-3bc167fef14e"/>
+								<box>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[TIÊU CHÍ]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="1.0"/>
+							</box>
+						</jr:columnFooter>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement x="0" y="0" width="400" height="30" uuid="2c767bd5-4519-4f4d-a00e-d32bc98168b8"/>
+								<box padding="3">
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isItalic="false" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ROWNAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="268ea81a-1c15-4ba7-91c3-5a91b0dda953">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="e280d77f-c3ce-4777-a442-2c427841f9af"/>
+								<box>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" isItalic="false" pdfFontName="" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[MÃ DÒNG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="1.0"/>
+							</box>
+						</jr:columnFooter>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="1903d36c-6945-4636-b0e9-2b368188b577"/>
+								<box padding="3">
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isItalic="false" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ROWCODE} == null ? "" : $F{ROWCODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="79" uuid="18221b15-9a99-4dd8-80f9-481d92e0d0b3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="79" height="30" uuid="6d51f3d6-50cc-445c-a245-cfddb149d324"/>
+								<box>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" isItalic="false" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[SỐ LIỆU                             HỆ THỐNG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="1.0"/>
+							</box>
+						</jr:columnFooter>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement x="0" y="0" width="79" height="30" uuid="5156b63c-d583-4f96-8174-48e119b0b4a8"/>
+								<box padding="5">
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isItalic="false" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{VAL} == null ? "" : $F{VAL}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField>
+				<reportElement positionType="Float" x="395" y="150" width="159" height="20" uuid="f1225424-ae75-4c97-804b-119d8305af69"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{underPos}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="16" y="120" width="180" height="20" uuid="0583f0b9-10ff-48d2-bfe8-bfa31f387e04"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[(Ký, ghi rõ họ và tên)]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="16" y="200" width="180" height="30" uuid="b41a4bb5-fcda-4de5-99ff-5ffc795538fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="16" y="100" width="180" height="20" uuid="3481fc69-b784-4277-b2e5-ab475223da65"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Người lập biểu]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="395" y="130" width="159" height="20" uuid="35e77584-2fee-4d86-ae88-e7b4b254dc8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="395" y="102" width="159" height="20" uuid="4358b986-9d66-4968-ad0b-19b14e00dee5"/>
+				<box padding="3"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="396" y="200" width="159" height="30" uuid="9ab9095d-cf91-4ede-8fa8-bb10fc92465b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{signature}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="16" y="9" width="420" height="20" isRemoveLineWhenBlank="true" uuid="b4fc3e28-b600-4841-8062-3d275a935a4a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{opt}.equals("4")  ? "Tổng hợp số liệu của "+$P{sppId} +" VKS được chọn " : $P{optName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="179" y="17" width="100" height="30" uuid="0796ca96-4eaf-4f36-a56b-f1a1b17769fe"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Trang " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="279" y="17" width="100" height="30" uuid="3ddc4dac-f3f5-4355-952d-8863dcb1e3c4"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["/" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

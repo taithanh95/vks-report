@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="1190" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e3d106be-c269-4da4-8f0a-a7919ca2c5ca">
+	<property name="net.sf.jasperreports.export.docx.frames.as.nested.tables" value="true"/>
+	<property name="net.sf.jasperreports.export.docx.flexible.row.height" value="true"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="ItemDataset" uuid="b60a05b3-5bdc-404b-93d5-0a522acce51e">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="tenDiaChi" class="java.lang.String"/>
+		<field name="banAnCoHieuLucPhapLuat" class="java.lang.String"/>
+		<field name="hinhPhat" class="java.lang.String"/>
+		<field name="quyetDinhThiHanhAn" class="java.lang.String"/>
+		<field name="quyetDinhCuongCheThiHanhAn" class="java.lang.String"/>
+		<field name="giayChungNhanDaChapHanhXongHinhPhat" class="java.lang.String"/>
+		<field name="quyetDinhThiHanh" class="java.lang.String"/>
+		<field name="quyetDinhCuongCheThiHanh" class="java.lang.String"/>
+		<field name="giayChungNhanDaChapHanhXongBienPhapTuPhap" class="java.lang.String"/>
+		<field name="ghiChu" class="java.lang.String"/>
+		<field name="stt" class="java.lang.Integer"/>
+	</subDataset>
+	<parameter name="ItemDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="spp" class="java.lang.String"/>
+	<parameter name="sppParent" class="java.lang.String"/>
+	<parameter name="year" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="752" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="390" y="30" width="310" height="30" uuid="f58b09e1-055d-4665-9fe4-319c91577ddd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="-4" width="100" height="30" uuid="a3b74fde-39be-4588-adb4-d635d725dd0a"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Mẫu sổ: 27]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="60" width="250" height="30" uuid="c74fbd37-802f-48fc-891f-d48acbfbc02d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13" isBold="true" isUnderline="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Độc lập - Tự Do - Hạnh phúc]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="140" width="758" height="20" uuid="602b7a08-1076-4e7a-8491-9de81398bc0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sppParent} == null ? "" : $P{sppParent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="160" width="759" height="32" uuid="9fc80a02-50d1-47b8-878f-00633a655d11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{spp} == null ? "" : $P{spp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="260" width="759" height="80" isRemoveLineWhenBlank="true" uuid="1c424d3b-2123-4919-815c-c4628ae3cbf6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="18" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[SỔ KIỂM SÁT VIỆC THI HÀNH ÁN ĐỐI VỚI PHÁP NHÂN THƯƠNG MẠI]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="730" width="240" height="20" uuid="9fc80a02-50d1-47b8-878f-00633a655d11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{year} == null ? "" : $P{year}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement x="0" y="750" width="87" height="1" uuid="0e10bc68-997b-4dfd-b858-b0ea0994fe3b"/>
+			</break>
+		</band>
+		<band height="752" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="11" y="0" width="1120" height="200" uuid="eb78f272-5302-4f1d-845d-fac61efbf10d">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="ItemDataset" uuid="82d0fde9-d274-4c81-b9e2-e5a4f6358ffe">
+						<dataSourceExpression><![CDATA[$P{ItemDataSource}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="30" uuid="5889be7a-dc5a-48ce-9b12-50ffb1b1d530">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="120" rowSpan="2">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<box leftPadding="1"/>
+							<staticText>
+								<reportElement x="0" y="0" width="29" height="96" uuid="53728dd5-1f1b-43c1-88f2-66196ab11efb">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Số TT]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="96" width="29" height="24" uuid="3d06ad00-59fa-49ef-8f3d-6a458169b64a">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[1]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<box leftPadding="1"/>
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="29" height="30" uuid="c27de037-8096-4c2e-9d57-4a89e8a2356e"/>
+								<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stt} == null ? "" : $F{stt}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="a828ee20-ac6d-400a-bf15-8ae053e871da">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="120" rowSpan="2">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="96" uuid="3ccedf82-ba06-43db-980d-15fc0d3ba80b">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[Tên, địa chỉ của pháp nhân]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="96" width="80" height="24" uuid="98a89478-1367-4c1d-9e89-8033b7368d46">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[2]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField textAdjust="StretchHeight" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="80" height="30" uuid="ba0d40b5-f1df-4614-96d5-6b56b7e1f27e"/>
+								<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{tenDiaChi} == null ? "" : $F{tenDiaChi}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="220" uuid="df730567-7a83-45f5-97ef-64d39dd71ff7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="120" rowSpan="2">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="220" height="60" uuid="9a18f60e-928c-4cf0-a3df-1c2a5aa5a288"/>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Bottom">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Bản án, quyết định có hiệu lực pháp luật]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="60" width="220" height="36" uuid="9f3324e4-6b2e-4ee7-893e-843dac086c4e">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="Times New Roman" isItalic="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[(Số; ngày, tháng; Tòa án đã xét xử; Tội danh)]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="96" width="220" height="24" uuid="292b30f8-6e36-4826-9e4f-33c8c4667885">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[3]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="220" height="30" uuid="6c10b67e-30da-458f-9e37-ad160e4a9f00"/>
+								<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{banAnCoHieuLucPhapLuat} == null ? "" : $F{banAnCoHieuLucPhapLuat}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="140" uuid="ec1a1bae-aa94-4649-b51b-af724dc27fbc">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table_CH" height="120" rowSpan="2">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="140" height="96" uuid="4f5aec09-8ad0-4ba0-95a4-bff9cd1a4eb6">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Hình phạt, mức án, Biện pháp tư pháp phải thi hành]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="96" width="140" height="24" uuid="b2844aec-be9d-4cb3-82c5-7148c3b29884">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[4]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="140" height="30" uuid="605f8f20-678b-4442-addc-55f5c2c2c841"/>
+								<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{hinhPhat} == null ? "" : $F{hinhPhat}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:columnGroup width="270" uuid="033953b2-31b7-4396-adb4-aac2abd8e437">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="270" height="15" uuid="25ccb45c-d083-42d8-adfe-5fb6d72b0074"/>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Bottom">
+									<font fontName="Times New Roman" size="10" isBold="true" isItalic="false" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Thi hành hình phạt]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="15" width="270" height="15" uuid="1671ca06-476e-49c9-a06a-81308b5acc47"/>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="Times New Roman" isItalic="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[(Số; ngày, tháng, năm)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnGroup width="270" uuid="9d826e93-f123-4ec6-ba0c-4f3685f8208c">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+							<jr:column width="80" uuid="c494aaeb-a9f8-45fe-b1db-e1beeec68b19">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+								<jr:columnHeader style="Table_CH" height="90" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="80" height="66" uuid="e07ac584-b6d2-452b-b8f1-723d46eaf691">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box leftPadding="2" rightPadding="2"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Quyết định thi hành án]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="66" width="80" height="24" uuid="1009a2bc-c614-4509-9a5f-750c96cff4bf">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman"/>
+										</textElement>
+										<text><![CDATA[5]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table_TD" height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="80" height="30" uuid="58e9623e-5d53-4039-a2e0-2c0e606c59c2"/>
+										<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+										<textElement textAlignment="Left" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{quyetDinhThiHanhAn} == null ? "" : $F{quyetDinhThiHanhAn}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="80" uuid="8b59b529-ea14-4957-8464-194d33412298">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+								<jr:columnHeader style="Table_CH" height="90" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="80" height="66" uuid="bb9d4679-8207-4e98-ad50-a61878ce7a35">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box leftPadding="2" rightPadding="2"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Quyết định cưỡng chế thi hành án; Lý do]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="66" width="80" height="24" uuid="fa8add66-e2c6-498d-b79e-0530737bac72">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman"/>
+										</textElement>
+										<text><![CDATA[6]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table_TD" height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="80" height="30" uuid="791808a0-37a2-4e83-93c8-42599bea9b7a"/>
+										<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+										<textElement textAlignment="Left" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{quyetDinhCuongCheThiHanhAn} == null ? "" : $F{quyetDinhCuongCheThiHanhAn}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="110" uuid="23b84435-0b32-42ee-8153-41ceba918645">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+								<jr:columnHeader style="Table_CH" height="90" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="110" height="66" uuid="570ad3c3-e4ea-4cfb-9cfa-439d5568eca5">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box leftPadding="2" rightPadding="2"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Giấy chứng nhận đã chấp hành xong]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="66" width="110" height="24" uuid="a49db450-a24e-4bc0-a291-6a0b91b4c5f7">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman"/>
+										</textElement>
+										<text><![CDATA[7]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table_TD" height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="110" height="30" uuid="b72c860c-1211-43c0-b6f6-c788e36a15e0"/>
+										<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+										<textElement textAlignment="Left" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{giayChungNhanDaChapHanhXongHinhPhat} == null ? "" : $F{giayChungNhanDaChapHanhXongHinhPhat}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+					</jr:columnGroup>
+					<jr:columnGroup width="270" uuid="38f9c862-6c1b-410d-a0f0-3c2e99d7b51e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="270" height="15" uuid="abdeaeb3-bbb9-4fc1-8ef0-6819f55afd90"/>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Bottom">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Thi hành biện pháp tư pháp]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="15" width="270" height="15" uuid="17f02265-d2af-4b51-b3ae-da8376dc4e92"/>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="Times New Roman" isItalic="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[(Số; ngày, tháng, năm)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnGroup width="270" uuid="32fd1124-a990-4b71-a0ba-aeb995c4af94">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+							<jr:column width="80" uuid="114d7585-b71b-4fee-b905-97d278a6514f">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+								<jr:columnHeader style="Table_CH" height="90" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="80" height="66" uuid="684f350d-70f6-4704-860a-d3beea356e7d">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box leftPadding="2" rightPadding="2"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Quyết định thi hành]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="66" width="80" height="24" uuid="0a31896a-4bd2-46eb-9701-ab50c4a0f576">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman"/>
+										</textElement>
+										<text><![CDATA[8]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table_TD" height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="80" height="30" uuid="43924aa2-cca7-4030-9539-bf014e42007f"/>
+										<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+										<textElement textAlignment="Left" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{quyetDinhThiHanh} == null ? "" : $F{quyetDinhThiHanh}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="80" uuid="0147e650-9876-4c5d-97fd-9f39353479ce">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+								<jr:columnHeader style="Table_CH" height="90" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="80" height="66" uuid="f27de771-1c46-4e63-ba98-7497fce35b59">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box leftPadding="2" rightPadding="2"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Quyết định cưỡng chế thi hành; Lý do]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="66" width="80" height="24" uuid="430d2230-354d-4a66-b025-4041da492de4">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman"/>
+										</textElement>
+										<text><![CDATA[9]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table_TD" height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="80" height="30" uuid="7f414466-f9c9-461a-bccb-3285c04c523f"/>
+										<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+										<textElement textAlignment="Left" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{quyetDinhCuongCheThiHanh} == null ? "" : $F{quyetDinhCuongCheThiHanh}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="110" uuid="da0cbf73-79ed-42c7-b5f8-955a5928762f">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+								<jr:columnHeader style="Table_CH" height="90" rowSpan="1">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<staticText>
+										<reportElement x="0" y="0" width="110" height="66" uuid="938ea8ba-724c-479c-a9d9-f0bdf303cf62">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box leftPadding="2" rightPadding="2"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+										</textElement>
+										<text><![CDATA[Giấy chứng nhận đã chấp hành xong]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="0" y="66" width="110" height="24" uuid="8098861d-9bf6-447f-8d26-3dd0f06bb466">
+											<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										</reportElement>
+										<box>
+											<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Times New Roman"/>
+										</textElement>
+										<text><![CDATA[10]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table_TD" height="30">
+									<textField textAdjust="StretchHeight">
+										<reportElement x="0" y="0" width="110" height="30" uuid="bea99b4c-092a-4be7-bdf2-88856859df33"/>
+										<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+										<textElement textAlignment="Left" verticalAlignment="Middle">
+											<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{giayChungNhanDaChapHanhXongBienPhapTuPhap} == null ? "" : $F{giayChungNhanDaChapHanhXongBienPhapTuPhap}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+					</jr:columnGroup>
+					<jr:column width="100" uuid="3261b4d6-5fe4-4d97-b6cd-deb64700dd0e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<jr:columnHeader style="Table_CH" height="120" rowSpan="2">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="96" uuid="22fa29a7-4771-4dd0-aafb-e627c79a5129">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box leftPadding="2" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[Ghi Chú]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="96" width="100" height="24" uuid="dc189523-1f30-4ae1-85e5-223e1ec4104c">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.05" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman"/>
+								</textElement>
+								<text><![CDATA[11]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="100" height="30" uuid="bea99b4c-092a-4be7-bdf2-88856859df33"/>
+								<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ghiChu} == null ? "" : $F{ghiChu}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField evaluationTime="Report">
+				<reportElement x="570" y="20" width="100" height="30" uuid="142e2810-e77e-4173-ba6b-420ee5c354c4"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["/" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="20" width="100" height="30" uuid="fb4d9081-d7d2-4960-a246-972a2f9b7eca"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Trang " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="425" leftMargin="85" rightMargin="85" topMargin="56" bottomMargin="16" uuid="e421f881-e702-4c5b-b36e-491a62b0dada">
+	<property name="net.sf.jasperreports.export.docx.frames.as.nested.tables" value="true"/>
+	<property name="net.sf.jasperreports.export.docx.flexible.row.height" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.collapse.row.span" value="false"/>
+	<property name="net.sf.jasperreports.export.xls.one.page.per.sheet" value="true"/>
+	<property name="net.sf.jasperreports.page.break.no.pagination" value="apply"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="ItemDataset" uuid="b60a05b3-5bdc-404b-93d5-0a522acce51e">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="id" class="java.lang.Long"/>
+		<field name="requestReportId" class="java.lang.Long"/>
+		<field name="columnNum" class="java.lang.Integer"/>
+		<field name="value" class="java.lang.Integer"/>
+		<field name="descriptionColumn" class="java.lang.String"/>
+		<group name="Header1">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header2">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header3">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header3.1">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header3.2">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header4">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header4.1">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header4.2">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header5">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header5.1">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header5.2">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header5.3">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header6">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header7">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header8">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header9">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header10">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+		<group name="Header11">
+			<groupExpression><![CDATA[$F{columnNum}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="ItemDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="sppId" class="java.lang.Integer"/>
+	<parameter name="fromDate" class="java.lang.String"/>
+	<parameter name="toDate" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="signature" class="java.lang.String"/>
+	<parameter name="sppname" class="java.lang.String"/>
+	<parameter name="optName" class="java.lang.String"/>
+	<parameter name="opt" class="java.lang.String"/>
+	<parameter name="position" class="java.lang.String"/>
+	<parameter name="underPos" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="420" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="330" y="0" width="140" height="30" uuid="f58b09e1-055d-4665-9fe4-319c91577ddd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Biểu số 33/2019]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="30" width="140" height="50" uuid="c74fbd37-802f-48fc-891f-d48acbfbc02d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="10" isBold="false" isUnderline="false" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[(Ban hành theo QĐ số 560/QĐ - VKSTC ngày 13/11/2019 của Viện trưởng VKSNDTC)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="85" width="470" height="39" isRemoveLineWhenBlank="true" uuid="1c424d3b-2123-4919-815c-c4628ae3cbf6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[THỐNG KÊ VI PHẠM PHÁP LUẬT TRONG HOẠT ĐỘNG TƯ PHÁP]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="125" width="470" height="20" isRemoveLineWhenBlank="true" uuid="f2881f39-ad4d-469f-9958-f34bc1dc0b80"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Từ ngày "+$P{fromDate} +" đến ngày " + $P{toDate}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="185" width="470" height="105" uuid="eb78f272-5302-4f1d-845d-fac61efbf10d">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="ItemDataset" uuid="82d0fde9-d274-4c81-b9e2-e5a4f6358ffe">
+						<dataSourceExpression><![CDATA[$P{ItemDataSource}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="350" uuid="5889be7a-dc5a-48ce-9b12-50ffb1b1d530">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableHeader height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<box padding="3">
+								<topPen lineWidth="1.0" lineStyle="Solid"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="344" height="34" uuid="53728dd5-1f1b-43c1-88f2-66196ab11efb">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[TIÊU CHÍ]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+						</jr:tableFooter>
+						<jr:groupHeader groupName="Header1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="1c37b783-4e77-4c6c-bfdd-7055c1ec34a9"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["1. Vi phạm trong giai đoạn tiếp nhận, giải quyết tố giác, tin báo về tội phạm, kiến nghị khởi tố"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="7b18ad31-d392-472c-a5c1-07dadf70834c"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["2. Vi phạm trong giai đoạn khởi tố, điều tra, truy tố các vụ án hình sự"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="5a4692be-3f2f-4a23-8cf0-16e24a4f2319"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["3. Vi phạm trong việc áp dụng, thay đổi, huỷ bỏ các biện pháp ngăn chặn và biện pháp cưỡng chế "]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="cd7f1246-2cae-4b2e-b261-ed66fbe2d9ac"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["3.1. Vi phạm trong việc áp dụng, thay đổi, huỷ bỏ các biện pháp ngăn chặn"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="5f3668a1-f7da-46b7-b877-9b688a0e0d0d"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["3.2. Vi phạm trong việc áp dụng, thay đổi, huỷ bỏ các biện pháp cưỡng chế"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="e9606f72-8e3f-4702-b4a4-adba800a0619"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["4. Vi phạm trong giai đoạn xét xử các vụ án hình sự và vi phạm về trình tự thủ tục xem xét, quyết định áp dụng biện pháp xử lý hành chính của tòa án"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="dacb60b5-ddf8-45c1-852d-11c97f5c3a52"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["4.1. Vi phạm trong giai đoạn xét xử các vụ án hình sự"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="2a1d1062-91b2-4f45-a7b5-2d69984cd86e"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["4.2. Vi phạm về trình tự thủ tục xem xét, quyết định áp dụng biện pháp xử lý"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="0411acc4-e723-4a63-b273-3e1aa7691d49"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["5. Vi phạm trong thi hành tạm giữ, tạm giam, tha hình sự và trong việc hoãn, miễn, giảm, tạm đình chỉ hoặc miễn chấp hành thời gian áp dụng biện pháp xử lý hành chính còn lại của tòa án"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="d51c466f-6a83-4d72-bf07-6d60a09fc43a"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["5.1. Vi phạm trong thi hành tạm giữ, tạm giam"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="58863f50-ea1b-42b3-8135-af7dcf3b45c5"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["5.2. Vi phạm trong THA hình sự"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.3">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="8dd0577a-17ab-4b13-8215-3be581c61a2e"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["5.3. Vi phạm trong việc hoãn, miễn, giảm, tạm đình chỉ hoặc miễn chấp hành phần thời gian áp dụng biện pháp xử lý hành chính còn lại của tòa án"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header6">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="9d9c0338-8193-4b2b-88e7-d3767b5d5160"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["6. Vi phạm trong thực hiện quyền bào chữa"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header7">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="1b676894-7c8c-47e7-9477-a351c1d112cd"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["7. Vi phạm trong thực hiện giám định, định giá tài sản, phiên dịch, dịch thuật, công chứng"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header8">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="ea1f9bd3-1553-4659-bf0a-b979e0beeec4"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["8. Vi phạm trong thụ lý, giải quyết các vụ, việc dân sự, HNGĐ, KDTM, lao động, hành chính"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header9">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="e890d770-fd6a-4020-a542-d589bd44f5fc"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["9. Vi phạm trong thi hành án dân sự và thi hành án hành chính"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header10">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="e0f61e53-be61-47a9-896a-28fd486d0040"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["10. Vi phạm trong thụ lý, giải quyết  khiếu nại, tố cáo về tư pháp"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header11">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+								<textField textAdjust="StretchHeight">
+									<reportElement x="0" y="0" width="350" height="20" uuid="868c7fd9-e9c6-416d-a4bb-d46fd4586ecc"/>
+									<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="2"/>
+									<textElement verticalAlignment="Middle">
+										<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+									</textElement>
+									<textFieldExpression><![CDATA["11. Xử lý người có hành vi vi phạm pháp luật"]]></textFieldExpression>
+								</textField>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:detailCell height="20">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<box padding="3">
+								<topPen lineWidth="0.75" lineStyle="Dotted"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid"/>
+								<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="344" height="14" uuid="c27de037-8096-4c2e-9d57-4a89e8a2356e"/>
+								<box leftPadding="1"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="false" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{descriptionColumn} == null ? "" : $F{descriptionColumn}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="a828ee20-ac6d-400a-bf15-8ae053e871da">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableHeader height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box padding="3">
+								<topPen lineWidth="1.0" lineStyle="Solid"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="34" height="34" uuid="3ccedf82-ba06-43db-980d-15fc0d3ba80b">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+									<font fontName="Times New Roman" size="10" isBold="true" pdfEncoding="Identity-H"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<text><![CDATA[MÃ DÒNG]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+						</jr:tableFooter>
+						<jr:groupHeader groupName="Header1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.3">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header6">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header7">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header8">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header9">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header10">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header11">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:detailCell height="20">
+							<box padding="3">
+								<topPen lineWidth="0.75" lineStyle="Dotted"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid"/>
+								<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+							<textField textAdjust="StretchHeight" isBlankWhenNull="false">
+								<reportElement x="0" y="0" width="34" height="14" isPrintWhenDetailOverflows="true" uuid="ba0d40b5-f1df-4614-96d5-6b56b7e1f27e"/>
+								<box padding="5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{columnNum} == null ? "" : $F{columnNum}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="a8198f9a-802f-4d25-a263-b1b960d40824">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableHeader height="40" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box padding="3">
+								<topPen lineWidth="1.0" lineStyle="Solid"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="74" height="34" uuid="1447b135-cad0-4385-93d0-c0a2b7df25b1">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" isItalic="false" pdfEncoding="Identity-H"/>
+								</textElement>
+								<text><![CDATA[SỐ LIỆU]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+						</jr:tableFooter>
+						<jr:groupHeader groupName="Header1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header3.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header4.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.1">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.2">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header5.3">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header6">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header7">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header8">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header9">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header10">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:groupHeader groupName="Header11">
+							<jr:cell height="20" rowSpan="1">
+								<box>
+									<topPen lineWidth="0.75" lineStyle="Dotted"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid"/>
+									<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid"/>
+								</box>
+							</jr:cell>
+						</jr:groupHeader>
+						<jr:detailCell height="20">
+							<box padding="3">
+								<topPen lineWidth="0.75" lineStyle="Dotted"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid"/>
+								<bottomPen lineWidth="0.75" lineStyle="Dotted"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid"/>
+							</box>
+							<textField textAdjust="StretchHeight">
+								<reportElement x="0" y="0" width="74" height="14" uuid="bea99b4c-092a-4be7-bdf2-88856859df33"/>
+								<box padding="5"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" pdfEncoding="Identity-H"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{value} == null ? "" : $F{value}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:groupHeader groupName="Header1">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 1]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header2">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 36]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header3">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 73]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header3.1">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 73]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header3.2">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 92]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header4">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 104]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header4.1">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 104]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header4.2">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 123]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header5">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 129]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header5.1">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 129]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header5.2">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 155]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header5.3">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 194]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header6">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 201]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header7">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 208]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header8">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 218]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header9">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 242]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header10">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 266]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+					<jr:groupHeader groupName="Header11">
+						<jr:row>
+							<printWhenExpression><![CDATA[$F{columnNum} == 305]]></printWhenExpression>
+						</jr:row>
+					</jr:groupHeader>
+				</jr:table>
+			</componentElement>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="165" width="420" height="20" isRemoveLineWhenBlank="true" uuid="8949542e-479c-4851-95e5-8af8c024c9cd"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false" isItalic="false" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{opt}.equals("4")  ? "Tổng hợp số liệu của "+$P{sppId} +" VKS được chọn " : $P{optName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="220" height="30" uuid="eafeca36-3024-4053-8521-46b88150e23a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sppname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="310" width="140" height="20" uuid="02bab85c-3fdf-4197-9c68-f0e3a9d0efa3"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Người lập biểu]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="260" y="290" width="210" height="20" uuid="6217d03a-cff9-436f-aee2-9fe232a1bf05"/>
+				<box padding="3"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="0" y="390" width="140" height="30" uuid="cf7c8037-e6d5-4e71-97a6-d8419e7b253e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="330" width="140" height="20" uuid="f317a830-b64a-43fb-88c2-c41d2c6b51e5"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[(Ký, ghi rõ họ và tên)]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="260" y="310" width="210" height="20" uuid="4e3b6195-f1e9-450b-9d75-b5ce1516c90d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="260" y="330" width="210" height="20" uuid="fbddf12a-6a43-4964-a7fd-d8f1845c2045"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="false" isItalic="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{underPos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="259" y="390" width="210" height="30" uuid="3073d4cb-5a72-4976-8d06-cbb38e4e50bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{signature}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="121" y="17" width="100" height="30" uuid="68ccd291-34ce-4417-b748-f995bdaf62ee"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Trang " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="221" y="17" width="100" height="30" uuid="d3900357-ccc0-4f63-a449-f26f6f977b82"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["/" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

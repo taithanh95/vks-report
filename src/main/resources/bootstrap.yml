@@ -1,0 +1,78 @@
+server:
+  port: 6068
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    status-page-url: http://${eureka.instance.hostname}:${server.port}/swagger-ui.html
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: false
+logging:
+  level:
+    org.zalando.logbook: TRACE
+  pattern:
+    console: "[%d{dd/MM/yyyy HH:mm:ss,SSS}] %m%n"
+    file: "[%d{dd/MM/yyyy HH:mm:ss,SSS}] %m%n"
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - OPTIONS
+  session:
+    store-type: none
+  profiles:
+    active: default
+  application:
+    name: vks-report
+  datasource:
+    url: "jdbc:oracle:thin:@45.122.253.178:2151:cdb241"
+#    url: "jdbc:oracle:thin:@192.168.1.241:1521:cdb241"
+#    url: "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=on)(FAILOVER=on)(ADDRESS=(PROTOCOL=TCP)(HOST=10.47.104.247)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=10.47.104.248)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=vksdb)))"
+    username: spp_report
+    password: Ab123456
+    driver-class-name: oracle.jdbc.OracleDriver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 4
+      max-lifetime: 1800000
+      maximum-pool-size: 20
+      connection-timeout: 60000
+      pool-name: ${spring.application.name}
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.Oracle10gDialect"
+        format_sql: true
+
+  #Redis configurations
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+        timeout: 0
+  mvc:
+    dispatch-options-request: true
